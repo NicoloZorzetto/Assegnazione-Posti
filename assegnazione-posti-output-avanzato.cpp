@@ -159,6 +159,7 @@ int main() {
     }
 
 
-
+  std::cout << "\n\nESECUZIONE COMPLETATA\n\n";
+	
   fflush(stdin); getchar(); return 0;
 }
