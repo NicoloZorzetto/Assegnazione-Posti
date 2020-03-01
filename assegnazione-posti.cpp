@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
 
 /* CREAZIONE STRUTTURA */
 
@@ -23,10 +24,20 @@ int main() {
   std::vector<std::string> output;
 
 /* RACCOLTA DATI */
-
   std::cout << "Inserisci numero di studenti: "; std::cin >> x;
-  studente studenti[x]; // creo un array di studenti
-  std::cout << "\n\n" << '\n';
+  while(1)
+  {
+	  if(std::cin.fail()){
+	  std::cin.clear();
+	  std::cin.ignore();
+	  std::cout<< "\nERRORE: inserisci solo valori numerici.\nRIPROVA: ";
+	  std::cin>>x;
+      }
+  	  else break;	
+  }
+
+  studente studenti[x];
+  std::cout << "\n\n";
 
   for(int i=0; i<x; i++){
     std::cout << "Inserisci nome dello studente " << i+1 << ": "; std::cin >> studenti[i].nome; // raccolgo il nome dello studente
