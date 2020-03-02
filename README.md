@@ -1,5 +1,5 @@
 # Assegnazione-Posti
-Un programma che forma compagni di banco in base alla preferenze degli studenti
+Un programma che usando un algoritmo generazionelae forma compagni di banco in base alla preferenze degli studenti
 
 # 1) Ho creato una struttura che mi permette di formare gli studenti
 In questo modo posso creare dinamicamente delle variabili "studente" che hanno un vettore contenente i compagni in ordine di preferenza, il nome, il compagno attuale ed un punteggio che rispecchia quanto allo studente piaccia la coppia formata
